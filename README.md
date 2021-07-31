@@ -10,6 +10,7 @@ Esqueleto base para automação de testes frontend (Web UI) e backend (REST API)
 - JAVA 8 (JDK 1.8.0) instalado no computador (utilizado para executar o Allure Report)
 - Variáveis de ambiente do JAVA JDK 1.8.0 configuradas para o usuário no Path e para o sistema no JAVA_HOME (utilizado para executar o Allure Report)
 - Outros pré-requisitos serão instalados durante a instalação do projeto
+- Caso tenha acabado de instalar os pré-requisitos, reinicie o computador antes de prosseguir
 
 # Instalando o projeto
 
