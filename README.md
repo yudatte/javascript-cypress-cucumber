@@ -49,7 +49,7 @@ Para gerar o relatório Allure, siga os passos abaixo:
 
 # Informações adicionais
 
-- Tanto os testes de UI quanto os de API utilizam BDD
+- Tanto os testes de UI quanto os de API utilizam BDD em Gherkin
 - Os cenários de teste são independentes, seguindo boas práticas de teste, logo um cenário não depende da execução de outro
 - Esse projeto utiliza a dependência ```@shelex/cypress-allure-plugin```
 - Esse projeto utiliza a dependência ```cypress-cucumber-preprocessor```
