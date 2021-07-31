@@ -14,7 +14,7 @@ Siga os passos abaixo:
 
 1. Clone o projeto em qualquer pasta de sua escolha
 2. Abra o projeto em uma IDE (sugestão VSCode)
-3. Execute o comando **_npm -i_** para instalar o projeto com os módulos
+3. Execute o comando ```npm -i``` para instalar o projeto com os módulos
 
 # Executando os testes
 
@@ -22,7 +22,7 @@ Para executar todos os testes, siga os passos abaixo:
 
 1. Abra o terminal de sua preferência
 2. Navegue até a pasta onde o projeto foi clonado e instalado
-3. Execute o comando **_npm run execute:all:tests_**
+3. Execute o comando ```npm run execute:all:tests```
 
 # Gerando o relatório Allure
 
@@ -30,7 +30,7 @@ Para gerar o relatório Allure, siga os passos abaixo:
 
 1. Abra o terminal de sua preferência
 2. Navegue até a pasta onde o projeto foi clonado e instalado
-3. Execute o comando **_npm run generate:new:allure:report_**
+3. Execute o comando ```npm run generate:new:allure:report```
 
 # Abrindo o relatório Allure
 
@@ -38,17 +38,17 @@ Para gerar o relatório Allure, siga os passos abaixo:
 
 1. Abra o terminal de sua preferência
 2. Navegue até a pasta onde o projeto foi clonado e instalado
-3. Execute o comando **_npm run open:report_**
+3. Execute o comando ```npm run open:report```
 
 # Informações adicionais
 
-- Esse projeto utiliza a dependência **_@shelex/cypress-allure-plugin_**
-- Esse projeto utiliza a dependência **_cypress-cucumber-preprocessor_**
-- Todas as definições de execução podem ser alteradas no arquivo **_package.json_** na seção **_scripts_**
-- Todas as definições do cucumber podem ser alteradas no arquivo **_package.json_** na seção **_cypress-cucumber-preprocessor_**
-- Todas as definições de navegador e ambiente podem ser alteradas no arquivo **_cypress.json_**
-- Feature files devem ser criados dentro da pasta **_./cypress/integration_**
-- Page objects devem ser criados dentro da pasta **_./cypress/support/pageobjects_**
-- Web elements utilizados nos page objects devem ser criados dentro da pasta **_./cypress/support/elements**
-- Passos com as funções dos feature files devem ser criados dentro da pasta **_./cypress/support/steps**
-- Before e after hooks podem ser modificados no arquivo **_Hooks.js_** dentro da pasta **_./cypress/support/steps**
+- Esse projeto utiliza a dependência ```@shelex/cypress-allure-plugin```
+- Esse projeto utiliza a dependência ```cypress-cucumber-preprocessor```
+- Todas as definições de execução podem ser alteradas no arquivo ```package.json``` na seção ```scripts```
+- Todas as definições do cucumber podem ser alteradas no arquivo ```package.json``` na seção ```cypress-cucumber-preprocessor```
+- Todas as definições de navegador e ambiente podem ser alteradas no arquivo ```cypress.json```
+- Feature files devem ser criados dentro da pasta ```./cypress/integration```
+- Page objects devem ser criados dentro da pasta ```./cypress/support/pageobjects```
+- Web elements utilizados nos page objects devem ser criados dentro da pasta ```./cypress/support/elements```
+- Passos com as funções dos feature files devem ser criados dentro da pasta ```./cypress/support/steps```
+- Before e after hooks podem ser modificados no arquivo ```Hooks.js``` dentro da pasta ```./cypress/support/steps```
