@@ -1,0 +1,8 @@
+/node_modules
+/cypress/allure-report
+/cypress/allure-results
+/allure-report
+/allure-results
+/cypress/videos
+/cypress/screenshots
+/cucumber-json

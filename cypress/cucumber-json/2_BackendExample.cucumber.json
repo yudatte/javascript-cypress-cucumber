@@ -1,0 +1,1058 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Teste backend",
+    "line": 1,
+    "id": "teste-backend",
+    "tags": [],
+    "uri": "2_BackendExample.feature",
+    "elements": [
+      {
+        "id": "teste-backend;teste-1---teste-api-retornando-resultado-ok",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Teste 1 - Teste API retornando resultado OK",
+        "tags": [
+          {
+            "name": "@Positivo",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "eu uso o ambiente de testes de API",
+            "result": {
+              "status": "passed",
+              "duration": 110000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "eu uso a rota \"/3/search/person\"",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "eu defino o query parameter \"api_key\" como \"c13d92e8fd77e67e081ec7b217fc941f\"",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "eu defino o query parameter \"query\" como \"Sérgio Mallandro\"",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "envio uma requisição GET",
+            "result": {
+              "status": "passed",
+              "duration": 3457000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "eu salvo o valor do campo \"results/0/known_for/1/original_title\" do response na variável temporária \"originalTitle\"",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "eu imprimo a duração da requisição",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "o status code deve ser 200",
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "o valor salvo na variável temporária \"originalTitle\" deve ser \"Lua de Cristal\"",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "teste-backend;teste-2---teste-api-retornando-resultado-nok",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Teste 2 - Teste API retornando resultado NOK",
+        "tags": [
+          {
+            "name": "@Negativo",
+            "line": 15
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "eu uso o ambiente de testes de API",
+            "result": {
+              "status": "passed",
+              "duration": 509000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "eu uso a rota \"/3/search/personn\"",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "envio uma requisição GET",
+            "result": {
+              "status": "passed",
+              "duration": 142000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "o status code deve ser 401",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "teste-backend;teste-3---como-usuário,-eu-quero-pegar-o-id-do-filme-lua-de-cristal-do-sérgio-malandro-e-comparar-em-duas-apis",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "Teste 3 - Como usuário, eu quero pegar o ID do filme Lua de Cristal do Sérgio Malandro e comparar em duas APIs",
+        "tags": [
+          {
+            "name": "@Positivo",
+            "line": 22
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 24,
+            "name": "eu uso o ambiente de testes de API",
+            "result": {
+              "status": "passed",
+              "duration": 493000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "eu uso a rota \"/3/search/person\"",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "eu defino o query parameter \"api_key\" como \"c13d92e8fd77e67e081ec7b217fc941f\"",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "eu defino o query parameter \"query\" como \"Sérgio Mallandro\"",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "envio uma requisição GET",
+            "result": {
+              "status": "passed",
+              "duration": 48000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "o status code deve ser 200",
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "eu salvo o valor do campo \"results/0/known_for/1/id\" do response na variável temporária \"movie_id\"",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "eu salvo o valor do campo \"results/0/known_for/1/original_title\" do response na variável temporária \"originalTitle\"",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "eu uso o ambiente de testes de API",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "eu uso a rota \"/3/movie/${movie_id}\"",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "eu defino o query parameter \"api_key\" como \"c13d92e8fd77e67e081ec7b217fc941f\"",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "eu defino o query parameter \"language\" como \"en-US\"",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "envio uma requisição GET",
+            "result": {
+              "status": "passed",
+              "duration": 27000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "o status code deve ser 200",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "o valor salvo na variável temporária \"originalTitle\" deve ser \"Lua de Cristal\"",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "teste-backend;teste-4---um-usuário-não-autenticado-não-deve-conseguir-ver-os-resultados-quando-procurar-por-um-filme",
+        "keyword": "Scenario",
+        "line": 41,
+        "name": "Teste 4 - Um usuário não autenticado não deve conseguir ver os resultados quando procurar por um filme",
+        "tags": [
+          {
+            "name": "@Negativo",
+            "line": 40
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 42,
+            "name": "eu uso o ambiente de testes de API",
+            "result": {
+              "status": "passed",
+              "duration": 577000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "eu uso a rota \"/3/movie/45179\"",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 44,
+            "name": "eu defino o query parameter \"api_key\" como \"0\"",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 45,
+            "name": "eu defino o query parameter \"language\" como \"en-US\"",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "envio uma requisição GET",
+            "result": {
+              "status": "passed",
+              "duration": 145000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 47,
+            "name": "o status code deve ser 401",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "teste-backend;teste-4---um-usuário-não-autenticado-não-deve-conseguir-ver-os-resultados-quando-procurar-por-uma-pessoa",
+        "keyword": "Scenario",
+        "line": 50,
+        "name": "Teste 4 - Um usuário não autenticado não deve conseguir ver os resultados quando procurar por uma pessoa",
+        "tags": [
+          {
+            "name": "@Positivo",
+            "line": 49
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 51,
+            "name": "eu uso o ambiente de testes de API",
+            "result": {
+              "status": "passed",
+              "duration": 563000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 52,
+            "name": "eu uso a rota \"/3/search/person\"",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 53,
+            "name": "eu defino o query parameter \"api_key\" como \"0\"",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 54,
+            "name": "eu defino o query parameter \"query\" como \"Sérgio Mallandro\"",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 55,
+            "name": "envio uma requisição GET",
+            "result": {
+              "status": "passed",
+              "duration": 148000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 56,
+            "name": "o status code deve ser 401",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "teste-backend;teste-5---validar-que-o-retorno-dos-trending-semanais-são-movie,-tv-e-person-respectivamente",
+        "keyword": "Scenario",
+        "line": 70,
+        "name": "Teste 5 - Validar que o retorno dos trending semanais são movie, tv e person respectivamente",
+        "tags": [
+          {
+            "name": "@Positivo",
+            "line": 58
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 60,
+            "name": "eu uso o ambiente de testes de API",
+            "result": {
+              "status": "passed",
+              "duration": 453000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 61,
+            "name": "eu uso a rota \"/3/trending/movie/week\"",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 62,
+            "name": "eu defino o query parameter \"api_key\" como \"c13d92e8fd77e67e081ec7b217fc941f\"",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 63,
+            "name": "envio uma requisição GET",
+            "result": {
+              "status": "passed",
+              "duration": 31000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 64,
+            "name": "eu salvo o valor do campo \"results/0/media_type\" do response na variável temporária \"mediaType\"",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 65,
+            "name": "o status code deve ser 200",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 66,
+            "name": "o valor salvo na variável temporária \"mediaType\" deve ser \"movie\"",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "teste-backend;teste-5---validar-que-o-retorno-dos-trending-semanais-são-movie,-tv-e-person-respectivamente",
+        "keyword": "Scenario",
+        "line": 71,
+        "name": "Teste 5 - Validar que o retorno dos trending semanais são movie, tv e person respectivamente",
+        "tags": [
+          {
+            "name": "@Positivo",
+            "line": 58
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 60,
+            "name": "eu uso o ambiente de testes de API",
+            "result": {
+              "status": "passed",
+              "duration": 417000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 61,
+            "name": "eu uso a rota \"/3/trending/tv/week\"",
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 62,
+            "name": "eu defino o query parameter \"api_key\" como \"c13d92e8fd77e67e081ec7b217fc941f\"",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 63,
+            "name": "envio uma requisição GET",
+            "result": {
+              "status": "passed",
+              "duration": 28000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 64,
+            "name": "eu salvo o valor do campo \"results/0/media_type\" do response na variável temporária \"mediaType\"",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 65,
+            "name": "o status code deve ser 200",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 66,
+            "name": "o valor salvo na variável temporária \"mediaType\" deve ser \"tv\"",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "teste-backend;teste-5---validar-que-o-retorno-dos-trending-semanais-são-movie,-tv-e-person-respectivamente",
+        "keyword": "Scenario",
+        "line": 72,
+        "name": "Teste 5 - Validar que o retorno dos trending semanais são movie, tv e person respectivamente",
+        "tags": [
+          {
+            "name": "@Positivo",
+            "line": 58
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 60,
+            "name": "eu uso o ambiente de testes de API",
+            "result": {
+              "status": "passed",
+              "duration": 401000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 61,
+            "name": "eu uso a rota \"/3/trending/person/week\"",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 62,
+            "name": "eu defino o query parameter \"api_key\" como \"c13d92e8fd77e67e081ec7b217fc941f\"",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 63,
+            "name": "envio uma requisição GET",
+            "result": {
+              "status": "passed",
+              "duration": 35000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 64,
+            "name": "eu salvo o valor do campo \"results/0/media_type\" do response na variável temporária \"mediaType\"",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 65,
+            "name": "o status code deve ser 200",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 66,
+            "name": "o valor salvo na variável temporária \"mediaType\" deve ser \"person\"",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "teste-backend;teste-6---um-usuário-não-autenticado-não-deve-conseguir-ver-os-resultados-quando-procurar-pelos-trendings",
+        "keyword": "Scenario",
+        "line": 75,
+        "name": "Teste 6 - Um usuário não autenticado não deve conseguir ver os resultados quando procurar pelos trendings",
+        "tags": [
+          {
+            "name": "@Negativo",
+            "line": 74
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 76,
+            "name": "eu uso o ambiente de testes de API",
+            "result": {
+              "status": "passed",
+              "duration": 422000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 77,
+            "name": "eu uso a rota \"/3/trending/all/day\"",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 78,
+            "name": "eu defino o query parameter \"api_key\" como \"0\"",
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 79,
+            "name": "envio uma requisição GET",
+            "result": {
+              "status": "passed",
+              "duration": 143000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 80,
+            "name": "o status code deve ser 401",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "teste-backend;teste-7---a-primeira-api-deve-retornar-brad-pitt-na-primeira-página-como-uma-das-pessoas-mais-populares-e-o-resultado-deve-ser-utilizado-para-fazer-a-busca-na-segunda-api",
+        "keyword": "Scenario",
+        "line": 83,
+        "name": "Teste 7 - A primeira API deve retornar Brad Pitt na primeira página como uma das pessoas mais populares e o resultado deve ser utilizado para fazer a busca na segunda API",
+        "tags": [
+          {
+            "name": "@Positivo",
+            "line": 82
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 84,
+            "name": "eu uso o ambiente de testes de API",
+            "result": {
+              "status": "passed",
+              "duration": 412000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 85,
+            "name": "eu uso a rota \"/3/person/popular\"",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 86,
+            "name": "eu imprimo a rota completa",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 87,
+            "name": "eu defino o query parameter \"api_key\" como \"c13d92e8fd77e67e081ec7b217fc941f\"",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 88,
+            "name": "eu defino o query parameter \"language\" como \"en-US\"",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 89,
+            "name": "eu defino o query parameter \"page\" como \"1\"",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 90,
+            "name": "envio uma requisição GET",
+            "result": {
+              "status": "passed",
+              "duration": 33000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 91,
+            "name": "o status code deve ser 200",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 92,
+            "name": "eu imprimo o body do response",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 93,
+            "name": "eu salvo o valor do campo \"results/10/name\" do response na variável temporária \"name\"",
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 94,
+            "name": "eu salvo o valor do campo \"results/10/id\" do response na variável temporária \"id\"",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 95,
+            "name": "eu imprimo o valor da variável temporária \"name\"",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 96,
+            "name": "eu imprimo o valor da variável temporária \"id\"",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 97,
+            "name": "eu uso o ambiente de testes de API",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 98,
+            "name": "eu uso a rota \"/3/person/${id}\"",
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 99,
+            "name": "eu imprimo a rota completa",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 100,
+            "name": "eu defino o query parameter \"api_key\" como \"c13d92e8fd77e67e081ec7b217fc941f\"",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 101,
+            "name": "eu defino o query parameter \"language\" como \"en-US\"",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 102,
+            "name": "envio uma requisição GET",
+            "result": {
+              "status": "passed",
+              "duration": 29000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 103,
+            "name": "o status code deve ser 200",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 104,
+            "name": "eu imprimo o body do response",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 105,
+            "name": "eu salvo o valor do campo \"id\" do response na variável temporária \"id2\"",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 106,
+            "name": "eu imprimo o valor da variável temporária \"id2\"",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 107,
+            "name": "o valor salvo na variável temporária \"id\" deve igual ao da variável temporária \"id2\"",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
