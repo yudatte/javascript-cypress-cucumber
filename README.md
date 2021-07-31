@@ -4,8 +4,9 @@ Esqueleto base para automação frontend e backend com cypress, nodejs, cucumber
 
 # Pré-requisitos
 
-- NPM versão 6.12.0 (pelo menos)
-- NodeJS versão v12.13.0 (pelo menos)
+- NPM versão 6.12.0 (pelo menos) instalado
+- NodeJS versão v12.13.0 (pelo menos) instalado
+- Google Chrome instalado
 - Outros pré-requisitos serão instalados durante a instalação do projeto
 
 # Instalando o projeto
