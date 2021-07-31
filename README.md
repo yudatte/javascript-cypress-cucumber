@@ -1,12 +1,14 @@
 # javascript-cypress-cucumber
 
-Esqueleto base para automação de testes frontend (Web UI) e backend (REST API) com cypress, nodejs, cucumber e allure report.
+Esqueleto base para automação de testes frontend (Web UI) e backend (REST API) com Cypress, Nodejs, Cucumber e Allure Report.
 
 # Pré-requisitos
 
-- NPM versão 6.12.0 (pelo menos) instalado
-- NodeJS versão v12.13.0 (pelo menos) instalado
-- Google Chrome instalado
+- NPM versão 6.12.0 (pelo menos) instalado no computador (utilizado para executar os comandos)
+- NodeJS versão v12.13.0 (pelo menos) instalado no computador (utilizado para interpretar o projeto feito em JavaScript)
+- Google Chrome instalado no computador (utilizado para executar o Cypress)
+- JAVA 8 (JDK 1.8.0) instalado no computador (utilizado para executar o Allure Report)
+- Variáveis de ambiente do JAVA JDK 1.8.0 configuradas para o usuário no Path e para o sistema no JAVA_HOME (utilizado para executar o Allure Report)
 - Outros pré-requisitos serão instalados durante a instalação do projeto
 
 # Instalando o projeto
